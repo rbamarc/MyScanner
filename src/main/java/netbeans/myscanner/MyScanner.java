@@ -33,6 +33,9 @@ public class MyScanner {
         //now wait until the user types the number of computers
         computers = myScanner.nextInt();
         
+        //easy fix 
+        myScanner.nextLine();
+        
         //ask user to input their hometown
         System.out.println("Please enter your hometown: ");
         //now wait for hometown to be input
@@ -41,6 +44,7 @@ public class MyScanner {
         //thus using it for nextLine causing the user to not be able to enter 
         //the value.
         //reading the input as a string reads whole line, avoiding the problem.
+        
         
         
         //now print the information to the console
