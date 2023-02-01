@@ -37,6 +37,11 @@ public class MyScanner {
         System.out.println("Please enter your hometown: ");
         //now wait for hometown to be input
         hometown = myScanner.nextLine();
+        //error occurs when run because ENTER is still in the que from nextInt
+        //thus using it for nextLine causing the user to not be able to enter 
+        //the value.
+        //reading the input as a string reads whole line, avoiding the problem.
+        
         
         //now print the information to the console
         
